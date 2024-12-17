@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('wallpapers-container');
+            
+            // Reverse the data array to display the newest images first
+            data.reverse();
+
             data.forEach(wallpaper => {
                 const bentoBox = document.createElement('div');
                 bentoBox.classList.add('bento-box');
