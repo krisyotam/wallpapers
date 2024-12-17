@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7f7; /* Light grey background */
+    color: #333; /* Dark grey text */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between the bento boxes */
+    padding: 20px;
+}
+
+#wallpapers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between the bento boxes */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.bento-box img {
+    width: 100%; /* Ensure the image scales within the container */
+    max-height: 200px; /* Control the image height to prevent overflow */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    border-radius: 4px;
+    margin-bottom: 8px; /* Minimal space below the image for the name */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.bento-box img:hover {
+    transform: scale(2.25); /* Scale the image to 225% on hover */
+}
+
+.bento-box {
+    width: auto; /* The bento box will scale based on the image size */
+    height: auto; /* Height will adjust automatically */
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.bento-box:hover {
+    transform: translateY(-5px); /* Slight hover effect for the container */
+}
+
+
+.cmd {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px; /* Shrunk font size for the image name */
+    color: #555; /* Slightly lighter text for the command */
+    text-align: center;
+    white-space: nowrap;
+    word-wrap: break-word;
+    max-width: 200px;
+    margin-top: 8px; /* Minimal margin for image name */
+}
+
+.cmd:hover {
+    color: #007bff; /* Highlight color for the command */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #wallpapers-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+
+    .bento-box {
+        width: 90%; /* Keep bento boxes filling most of the space */
+        height: auto; /* Let the height adjust automatically */
+    }
+
+    .bento-box img {
+        max-height: 200px; /* Adjust image height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #wallpapers-container {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+
+    body {
+        padding: 5px;
+    }
+
+    .bento-box {
+        width: 100%; /* Full width for mobile screens */
+        height: 100%; /* Let the height adjust automatically */
+    }
+
+    .bento-box img {
+        max-height: 180px; /* Adjust image height for mobile screens */
+    }
+
+    .cmd {
+        font-size: 10px; /* Even smaller font size for mobile */
+    }
+}
+
+/* Style for the curl command bar */
+.curl-bar {
+    width: 100%;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text */
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border-bottom: 1px solid #e1e1e1; /* Thin border to separate */
+    margin-bottom: 20px; /* Space below the bar */
+}
