@@ -1,13 +1,92 @@
 [
-    {
-      "id": "1",
-      "name": "winter_town.png",
-      "path": "/src/winter_town.png"
-    },
-    {
-      "id": "2",
-      "name": "gentoo_penguin_winter.png",
-      "path": "/src/gentoo_penguin_winter.png"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "name": "image1.png",
+    "path": "/src/image1.png"
+  },
+  {
+    "id": "2",
+    "name": "image2.png",
+    "path": "/src/image2.png"
+  },
+  {
+    "id": "3",
+    "name": "image3.png",
+    "path": "/src/image3.png"
+  },
+  {
+    "id": "4",
+    "name": "image4.png",
+    "path": "/src/image4.png"
+  },
+  {
+    "id": "5",
+    "name": "image5.png",
+    "path": "/src/image5.png"
+  },
+  {
+    "id": "6",
+    "name": "image6.png",
+    "path": "/src/image6.png"
+  },
+  {
+    "id": "7",
+    "name": "image7.png",
+    "path": "/src/image7.png"
+  },
+  {
+    "id": "8",
+    "name": "image8.png",
+    "path": "/src/image8.png"
+  },
+  {
+    "id": "9",
+    "name": "image9.png",
+    "path": "/src/image9.png"
+  },
+  {
+    "id": "10",
+    "name": "image10.png",
+    "path": "/src/image10.png"
+  },
+  {
+    "id": "11",
+    "name": "image11.png",
+    "path": "/src/image11.png"
+  },
+  {
+    "id": "12",
+    "name": "image12.png",
+    "path": "/src/image12.png"
+  },
+  {
+    "id": "13",
+    "name": "image13.png",
+    "path": "/src/image13.png"
+  },
+  {
+    "id": "14",
+    "name": "image14.png",
+    "path": "/src/image14.png"
+  },
+  {
+    "id": "15",
+    "name": "image15.png",
+    "path": "/src/image15.png"
+  },
+  {
+    "id": "16",
+    "name": "image16.png",
+    "path": "/src/image16.png"
+  },
+  {
+    "id": "17",
+    "name": "image17.png",
+    "path": "/src/image17.png"
+  },
+  {
+    "id": "18",
+    "name": "image18.png",
+    "path": "/src/image18.png"
+  }
+]
